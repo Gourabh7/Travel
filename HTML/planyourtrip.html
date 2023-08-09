@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="planyourtrip.css" />
+    <link rel="stylesheet" href="utility.css" />
+  </head>
+  <body>
+    <header class="header">
+      <section class="headersection">
+        <nav class="navbar">
+          <ul class="unorderedlist">
+            <li class="list"><a href="index.html">Home</a></li>
+            <li class="list Explore">
+              <a href="#">Explore</a>
+              <div class="placetoexplore submenu">
+                <table class="table-table">
+                  <tr class="tablerow">
+                    <th><a href="mppackage.html">Madhya Pradesh</a></th>
+                    <th><a href="uttarakhand.html">Uttarakhand</a></th>
+                  </tr>
+                  <tr class="tablerow">
+                    <td class="tabledata">
+                      <a href="./mppackage.html#bhopal">Bhopal</a>
+                    </td>
+                    <td class="tabledata">
+                      <a href="./uttarakhand.html#nanital">Nanital</a>
+                    </td>
+                  </tr>
+                  <tr class="tablerow">
+                    <td class="tabledata">
+                      <a href="./mppackage.html#panchamari">panchamari</a>
+                    </td>
+                    <td class="tabledata">
+                      <a href="./uttarakhand.html#mussorie">mussorie</a>
+                    </td>
+                  </tr>
+                  <tr class="tablerow">
+                    <td class="tabledata">
+                      <a href="./mppackage.html#ujjain">Ujjain</a>
+                    </td>
+
+                    <td class="tabledata">
+                      <a href="./uttarakhand.html#dehradun">Dehradun</a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </li>
+            <li class="list Experiences">
+              <a href="#">Experiences</a>
+              <div class="experiencelist">
+                <ul class="mainheading">
+                  <li><a href="mppackage.html">Madhya Pradesh</a></li>
+
+                  <li><a href="uttarakhand.html">Uttarakhand</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="list Trip">
+              <a href="planyourtrip.html">Plan Your Trip</a>
+            </li>
+          </ul>
+          <div class="mobile-navbar-btn">
+            <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+            <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+          </div>
+        </nav>
+      </section>
+    </header>
+    <main>
+      <div class="havefun">
+        <div class="container">
+          <h1>
+            customize your plan
+          </h1>
+          <form action="">
+            <div class="flex-new">
+              <label for="Name">Name:</label>
+              <input
+                type="text"
+                name="Name"
+                id="Name"
+                placeholder="Your Name"
+              />
+              <label for="number">Mobile Number:</label>
+              <input type="number" name="number" onkeyup="func()" id="number" />
+            </div>
+
+            <div class="searchcontainer">
+              <div class="left">
+                <h3>choose your city</h3>
+                <ul id="unol">
+                  <li class="list2" id="1">
+                    Dehradun
+                  </li>
+                  <li class="list2" id="2">
+                    Nanital
+                  </li>
+                  <li class="list2" id="3">
+                    mussorie
+                  </li>
+                  <li class="list2" id="4">
+                    Ujjain
+                  </li>
+                  <li class="list2" id="5">
+                    Bhopal
+                  </li>
+                  <li class="list2" id="6">
+                    panchmari
+                  </li>
+                </ul>
+              </div>
+              <div class="right">
+                <h3>your list</h3>
+                <ul class="" id="newlist">
+                  <li class="list2" id="new1">
+                    Dehradun
+                  </li>
+                  <li class="list2" id="new2">
+                    Nanital
+                  </li>
+                  <li class="list2" id="new3">
+                    mussorie
+                  </li>
+                  <li class="list2" id="new4">
+                    Ujjain
+                  </li>
+                  <li class="list2" id="new5">
+                    Bhopal
+                  </li>
+                  <li class="list2" id="new6">
+                    panchmari
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="cost">
+              <div class="total">
+                <p>total</p>
+              </div>
+
+              <p id="totalcost">0</p>
+            </div>
+            <div class="btn">
+              <button class="button" onclick="sendMail();">
+                Book your Destinations
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <script src="planyourtrip.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/f6fe13f52d.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="fetch.js"></script> -->
+  </body>
+</html>
